@@ -22,13 +22,15 @@ a {
 .hero-section{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     background-image: url( 'img/christopher-gower-m_HRfLhgABo-unsplash.jpg') ;
    background-position: center;
    background-size: cover;
     background-repeat: no-repeat,;
      margin-top:-5 ; 
     z-index: 100;
+    -webkit-clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 80%, 48% 100%, 48% 100%, 0% 80%, 0 1%);
+clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 80%, 48% 100%, 48% 100%, 0% 80%, 0 1%);
    
   
 }
@@ -168,7 +170,9 @@ img{
     background-position: center;
     position: relative;
     z-index: 100;
-  
+
+  -webkit-clip-path: polygon(50% 0%, 100% 23%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 26%);
+clip-path: polygon(50% 0%, 100% 23%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 26%);
 }
 .skill-section::after{
   content: "";
@@ -214,3 +218,81 @@ color: white;
 }
 .progrse-div {}
 
+/*skile-section end*/
+
+/*servise section start*/
+.servise-section{}
+
+.flex-serv{
+    display: flex;
+    
+}
+.serves-row{
+  width:30%;
+  text-align: justify;
+  padding: 10px;
+  margin: 50x;
+  box-shadow: 10px 10px 50px dimgray;
+  text-align: center;
+  margin-left: 20px;
+  height: 400px;
+}
+.servise-colum img{ 
+ 
+}
+.k{
+    margin-bottom: 9px !important;
+}
+/*servise section-end*/
+
+/*Forms section start*/
+.form-section{
+    margin-top: 40px;
+    background: url('img/form.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    z-index: -1;
+    -webkit-clip-path: polygon(49% 13%, 100% 0, 100% 60%, 100% 100%, 0 99%, 0% 60%, 0 0);
+    clip-path: polygon(49% 13%, 100% 0, 100% 60%, 100% 100%, 0 99%, 0% 60%, 0 0);
+  
+}
+
+.form-all{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+  
+}
+.map-left{
+  margin-left: 20px;
+}
+
+.form-figth{
+    margin-left: 80px;
+    background: rgba(0, 0, 0, 0.719);
+    padding:30px;
+    text-align: center;
+    border: 10px solid rgba(0, 0, 0, 0.719);
+    border-radius: 10px;
+    margin-top: 20px;
+    
+
+}
+input{
+width: 300px;
+height: 30px;
+margin:  10px 0px;
+outline: none;
+border-radius: 10px;
+}
+footer{
+text-align: center;
+color: dimgray
+
+}
