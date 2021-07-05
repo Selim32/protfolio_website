@@ -1,19 +1,26 @@
 
 body{
     margin:0px;
-    padding: 0px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    padding: 0px;
 }
 a {
     text-decoration: none;
 }
 .hero-section::after{
-    content: "";
+    content: " ";
     position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
     background: rgba(0, 0, 0, 0.651);
+    opacity: .7;
+    z-index: -1;
 }
 .hero-section{
+    position: relative;
     width: 100%;
     height: 100vh;
     background-image: url( 'img/christopher-gower-m_HRfLhgABo-unsplash.jpg') ;
@@ -21,32 +28,189 @@ a {
    background-size: cover;
     background-repeat: no-repeat,;
      margin-top:-5 ; 
+    z-index: 100;
    
-  background-color: #3b3434;
-  border: 1px solid black;
-  opacity: 0.6;
+  
 }
 .top-header{
     padding-top:9px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
     
 }
 .logo{}
 .logo h3{
     color: white !important;
-    font-weight: 900 !important;
-    padding-left: 10px;
+    font-weight: bold;
+     margin-left:50px
 }
-.logo span{
-    color :#FF0000;
+span{
+    color :#FF7373;
     display: inline-block;
+    transition: .1s;
 }
-.menu{}
+span:hover{ 
+    color: #fa5151;
+}
+
+.menu{
+    margin-right:100px;
+    margin-top: 17px;
+}
 .menu a{
    display: inline-block;
    text-transform: uppercase;
-   color :#FF0000;
-   padding :0px 10px
+   color :#FF7373;
+   padding :0px 10px;
+   font-weight: bold;
+   transition: 1s;
+ 
 }
+.menu a:hover{
+    color:#fa5151 ;
+    transition: 2s;
+   
+}
+/* top end*/
+.midil-section{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.midil-text{
+ 
+    margin:110px 40px
+}
+.midil-text h1{
+    font-size: 50px;
+    color:white;
+    padding: 0px;
+}
+  
+.midil-text p{
+    font-size: 25px;
+    color :#FF7373;
+    text-align:justify
+ 
+    
+}
+ .btn{
+    width: 50px !important;
+    height: 20px;
+    background: #FF7373;
+    border-radius: 10px;
+     padding:10px 40px;
+     color: white;
+     transition: 1s;
+}
+.btn:hover{
+    background: #fa5151;
+}
+img{
+    max-width: 100%
+}
+.midil-img{
+    
+}
+.midil-img img{
+    max-width: 90%;
+    margin-right: -378px;
+    margin-top: 33%;
+    
+}
+/*header section end*/
+
+
+
+/*about section start */
+.About-section{
+    padding:100px 50px;
+}
+.section-info{
+    text-align: center;
+    font-weight: bold;
+}
+.section-info h1{
+    font-size: 50px;
+    padding-top:-10px
+    
+}
+.section-info p{
+    font-size:25px;
+  color: #FF7373;
+
+}
+.about-row{
+    display: flex;
+    align-items: center;
+}
+.about-left{
+
+    width:50%;
+}
+.about-left img{
+    max-width: 80%;
+}
+.about-right{
+    width:50%;
+    
+    
+}
+/*about section end*/
+
+/*sKill section */
+.skill-section{
+    padding-top:40px;
+    background: url("img/retrosupply-jLwVAUtLOAQ-unsplash.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 100;
+  
+}
+.skill-section::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.822);
+
+
+}
+.skill-midil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.637);
+    padding: 20px;
+}
+.slill-left{
+    width: 50%;
+    margin:40px
+}
+.slill-left p{
+    text-align: justify;
+    color: white;
+}
+.slill-left h1{
+color: white;
+}
+.slill-right{
+    width: 50%;
+}
+.progrse-div #file{
+    width:60%;
+    height: 20px;
+    margin-left: 30px;
+  
+}
+.progrse-div .h {
+    max-width: 50px;
+    
+}
+.progrse-div {}
+
